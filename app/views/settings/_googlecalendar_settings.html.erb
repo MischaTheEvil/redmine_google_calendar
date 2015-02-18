@@ -4,7 +4,5 @@ This will allow you to create a tab that references a custom iframe. You will ne
 
 <p>
   <label>iFrame Text</label>
-  <%= select_tag 'settings[iframe_text]',
-                 '<option value="">(Select one)</option>' +
-                 options_from_collection_for_select(string_fields, :id, :name, @settings['iframe_text'].to_i) %><br />
+  <%= select_tag 'settings[iframe_text]', options_from_collection_for_select(string_fields, :id, :name, @settings['iframe_text'].to_i), prompt: "(Select One)" %><br />
 </p>
