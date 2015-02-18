@@ -1,5 +1,3 @@
-require 'tzinfo'
-
 class GoogleCalendarController < ApplicationController
   unloadable
   layout 'base'
